@@ -10,12 +10,18 @@ First, list all disks to identify the one you want to work with:
 sudo fdisk -l
 ```
 
-## Secure Data Wiping with DoD 5220.22-M Standard
+## Secure Data Wiping with DoD 5220.22-M Standard (I'm paranoid today)
 
 The DoD 5220.22-M standard requires multiple passes of overwriting with specific patterns and a final verification. 
 
 ```
 sudo shred -v -n 3 -z /dev/sdX
+```
+
+## I'm just a little bit paranoid today
+
+```
+sudo shred -v -z /dev/sdg
 ```
 
 ## Creating a New Formatted Partition with exFAT
