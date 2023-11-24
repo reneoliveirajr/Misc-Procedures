@@ -15,7 +15,7 @@ sudo fdisk -l
 The DoD 5220.22-M standard requires multiple passes of overwriting with specific patterns and a final verification. 
 
 ```
-sudo shred -n 3 -z /dev/sdX
+sudo shred -v -n 3 -z /dev/sdX
 ```
 
 ## Creating a New Formatted Partition with exFAT
