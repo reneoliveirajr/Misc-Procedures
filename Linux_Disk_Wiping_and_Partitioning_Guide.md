@@ -21,7 +21,7 @@ sudo shred -v -n 3 -z /dev/sdX
 ## I'm just a little bit paranoid today
 
 ```
-sudo shred -v -z /dev/sdg
+sudo shred -v -z /dev/sdX
 ```
 
 ## Creating a New Formatted Partition with exFAT
