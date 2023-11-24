@@ -15,7 +15,7 @@ sudo fdisk -l
 The DoD 5220.22-M standard requires multiple passes of overwriting with specific patterns and a final verification. 
 
 ```
-shred -n 3 -z /dev/sdX
+sudo shred -n 3 -z /dev/sdX
 ```
 
 ## Creating a New Formatted Partition with exFAT
@@ -25,7 +25,7 @@ exFAT (Extended File Allocation Table) is a filesystem designed for flash storag
 To create a new partition: 
 
 ```
-fdisk /dev/sdX
+sudo fdisk /dev/sdX
 d # to delete partitions
 n # to create partitions
 p # primary
